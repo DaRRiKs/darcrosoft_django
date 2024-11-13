@@ -1,0 +1,470 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Darcrosoft</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'page_1/css/style.css' %}">
+    <link rel="shortcut icon" href="{% static 'img/darcrosoft%20favicon.png' %}" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<header>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="{% url 'page_1' %}"><img src="{% static 'img/Darcrosoft Logo Text.png' %}" alt=""></a>
+            <button
+                    class="navbar-toggler d-lg-none"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId"
+                    aria-controls="collapsibleNavId"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active mainpage1" href="{% url 'page_2' %}" aria-current="page"
+                        >Darcrosoft 365
+                            <span class="visually-hidden">(current)</span></a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                id="dropdownId"
+                                data-bs-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                        >Dropdown</a
+                        >
+                        <div
+                                class="dropdown-menu"
+                                aria-labelledby="dropdownId"
+                        >
+                            <a class="dropdown-item" href="#"
+                            >Action 1</a
+                            >
+                            <a class="dropdown-item" href="#"
+                            >Action 2</a
+                            >
+                        </div>
+                    </li>
+                </ul>
+                <form class="d-flex my-2 my-lg-0">
+                    <input
+                            class="form-control me-sm-2"
+                            type="text"
+                            placeholder="Search"
+                    />
+                    <button
+                            class="btn btn-outline-success my-2 my-sm-0"
+                            type="submit"
+                    >
+                        Search
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+<div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+        <li
+                data-bs-target="#carouselId"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="First slide"
+        ></li>
+        <li
+                data-bs-target="#carouselId"
+                data-bs-slide-to="1"
+                aria-label="Second slide"
+        ></li>
+    </ol>
+    <div class="carousel-inner img-fluid" role="listbox">
+        <div class="carousel-item active">
+            <img
+                    src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-MultiCanvas-Microsoft-Copilot-App-3screens:VP5-1920x600"
+                    class="w-100 d-block"
+                    alt="First slide"
+            />
+            <div class="carousel-caption d-none d-md-block">
+                <h3 class="carousel-1-text-black">Раскройте потенциал с Darcrosoft Copilot</h3>
+                <p class="carousel-1-text-black">Более быстрый результат и творчество без границ с помощью ИИ, где бы вы ни были.</p>
+            </div>
+        </div>
+        <div class="carousel-item img-fluid">
+            <img
+                    src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Hero-Windows11-GlobalLaunch:VP5-1920x600"
+                    class="w-100 d-block"
+                    alt="Second slide"
+            />
+            <div class="carousel-caption d-none d-md-block">
+                <h3 class="carousel-1-text-white">Разработано для жизни — сегодня и в будущем</h3>
+                <p class="carousel-1-text-white">Следующее поколение игр. Ваши цели. Друзья и семья. С Windows 11 вы станете еще ближе к тому, что успели полюбить.</p>
+            </div>
+        </div>
+    </div>
+    <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselId"
+            data-bs-slide="prev"
+    >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselId"
+            data-bs-slide="next"
+    >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<div class="container">
+    <div class="container-inside" id="cont-card">
+        <div class="card">
+            <img class="card-img-top" src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-MSFT-CP-Edge?wid=380&hei=213&fit=crop" alt="Title" />
+            <div class="card-body">
+                <h3 class="card-title">Darcrosoft Edge</h3>
+                <p class="card-text">Потрясающая производительность, больше конфиденциальности, продуктивности и дополнительных возможностей.</p>
+                <div class="link-group">
+                    <button
+                            type="button"
+                            class="btn btn-primary button-style"
+                    >
+                        Скачать
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="card-img-top" src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-Soft-CP-OneDriveCampaignRefresh-2?wid=380&hei=213&fit=crop" alt="Title" />
+            <div class="card-body">
+                <h3 class="card-title">Darcrosoft OneDrive</h3>
+                <p class="card-text">Сохраняйте свои файлы и фотографии на OneDrive — они будут доступны с любого устройства и где угодно.</p>
+                <div class="link-group">
+                    <button
+                            type="button"
+                            class="btn btn-primary button-style"
+                    >
+                        Подробнее
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-PC-SMB-OneNote?wid=380&hei=213&fit=crop" alt="Title" />
+            <div class="card-body">
+                <h3 class="card-title">OneNote</h3>
+                <p class="card-text">Приведите свои заметки и дела в порядок.</p>
+                <div class="link-group">
+                    <button
+                            type="button"
+                            class="btn btn-primary button-style"
+                    >
+                        Узнать больше
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-CP-MSCOM-Outlook-iOS-Android?wid=380&hei=213&fit=crop" alt="Title" />
+            <div class="card-body">
+                <h3 class="card-title">Outlook для iOS и Android</h3>
+                <p class="card-text">Будьте на связи. Организовывайте. Успевайте больше.</p>
+                <div class="link-group">
+                    <button
+                            type="button"
+                            class="btn btn-primary button-style"
+                    >
+                        Скачать
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-1">
+        <div class="card-1-body">
+            <img class="card-img" src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Hero-Highlight-Teams-Floating-UI:VP5-1596x600" alt="Title" />
+            <div class="text-overlay">
+                <h2 class="card-title">Больше общения с близкими</h2>
+                <p class="card-text">Общайтесь, созванивайтесь и составляйте планы с семьей и друзьями в Darcrosoft Teams</p>
+                <a
+                        name=""
+                        id="card-1-button"
+                        class="btn btn-primary button-1-style"
+                        href="#"
+                        role="button"
+                >Подробнее</a
+                >
+            </div>
+        </div>
+    </div>
+    <div class="cards-1">
+        <div class="cards-1-text">
+            <h2 class="cards-1-text-h2">Для бизнеса</h2>
+        </div>
+        <div class="cards-1-cards">
+            <div class="card-2">
+                <img class="card-img-top" src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Visual-Studio-Icon?wid=380&hei=213&fit=crop" alt="Title" />
+                <div class="card-body">
+                    <h3 class="card-title">Visual Studio 2022</h3>
+                    <p class="card-text">Наиболее комплексная среда IDE для разработчиков .NET и C++ на Windows для создания веб-приложений, приложений для ПК, облачных и мобильных приложений, а также служб и игр.</p>
+                    <div class="link-group">
+                        <button
+                                type="button"
+                                class="btn btn-primary button-2-style"
+                        >
+                            Скачайте Visual Studio 2022
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-2">
+                <img class="card-img-top" src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/JIC-DPS-CP01?wid=380&hei=213&fit=crop" alt="Title" />
+                <div class="card-body">
+                    <h3 class="card-title">Добро пожаловать в Windows 365 Cloud PC</h3>
+                    <p class="card-text">Работать с Windows в облаке Darcrosoft теперь можно на любых устройствах.</p>
+                    <div class="link-group">
+                        <button
+                                type="button"
+                                class="btn btn-primary button-2-style"
+                        >
+                            Попробуйте прямо сейчас
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-2">
+                <img class="card-img-top" src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-Apps-CP-EdgeBingLifeStyle?wid=380&hei=213&fit=crop" alt="Title" />
+                <div class="card-body">
+                    <h3 class="card-title">Darcrosoft Edge</h3>
+                    <p class="card-text">Производительность, совместимость, безопасность. Браузер для бизнеса.</p>
+                    <div class="link-group">
+                        <button
+                                type="button"
+                                class="btn btn-primary button-2-style"
+                        >
+                            Скачать
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-2">
+                <img class="card-img-top" src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Brand-Hybrid-Work?wid=380&hei=213&fit=crop" alt="Title" />
+                <div class="card-body">
+                    <h3 class="card-title">Встречайте гибридный мир</h3>
+                    <p class="card-text">Попробуйте инструменты, ресурсы и стратегии, которые помогут вашим сотрудникам добиться успеха в новом мире гибкой рабочей среды.</p>
+                    <div class="link-group">
+                        <button
+                                type="button"
+                                class="btn btn-primary button-2-style"
+                        >
+                            Подробнее
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="back-to-top">
+    <div class="button-to-top">
+        <button
+                type="button"
+                class="btn btn-primary btn-to-top"
+        >
+            <a href="#">↑ Назад наверх</a>
+        </button>
+    </div>
+</div>
+<footer class="footer">
+    <nav class="footer-nav">
+        <div class="footer-nav-column-1">
+            <div class="footer-nav-column-heading">
+                Что нового?
+            </div>
+            <ul class="footer-nav-column-list">
+                <li>
+                    <a href="#">Darcrosoft Copilot</a>
+                </li>
+                <li>
+                    <a href="#">Darcrosoft 365</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-nav-column-2">
+            <div class="footer-nav-column-heading">
+                Darcrosoft Store
+            </div>
+            <ul class="footer-nav-column-list">
+                <li>
+                    <a href="#">Профиль учетной записи</a>
+                </li>
+                <li>
+                    <a href="#">Возврат товаров</a>
+                </li>
+                <li>
+                    <a href="#">Отслеживание заказа</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-nav-column-3">
+            <div class="footer-nav-column-heading">
+                Для образования
+            </div>
+            <ul class="footer-nav-column-list">
+                <li>
+                    <a href="#">Darcrosoft для образования</a>
+                </li>
+                <li>
+                    <a href="#">Устройства для образования</a>
+                </li>
+                <li>
+                    <a href="#">Darcrosoft Teams для образования</a>
+                </li>
+                <li>
+                    <a href="#">Darcrosoft 365 для образования</a>
+                </li>
+                <li>
+                    <a href="#">Office для образования</a>
+                </li>
+                <li>
+                    <a href="#">Подготовка и профессиональное развитие преподавателей</a>
+                </li>
+                <li>
+                    <a href="#">Специальные предложения для учащихся и родителей</a>
+                </li>
+                <li>
+                    <a href="#">Azure для учащихся</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-nav-column-4">
+            <div class="footer-nav-column-heading">
+                Для бизнеса
+            </div>
+            <ul class="footer-nav-column-list">
+                <li>
+                    <a href="#">Darcrosoft Cloud</a>
+                </li>
+                <li>
+                    <a href="#">Darcrosoft Security</a>
+                </li>
+                <li>
+                    <a href="#">Azure</a>
+                </li>
+                <li>
+                    <a href="#">Dynamics 365</a>
+                </li>
+                <li>
+                    <a href="#">Darcrosoft 365</a>
+                </li>
+                <li>
+                    <a href="#">Darcrosoft Advertising</a>
+                </li>
+                <li>
+                    <a href="#">Darcrosoft 365 Copilot</a>
+                </li>
+                <li>
+                    <a href="#">Darcrosoft Teams</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-nav-column-5">
+            <div class="footer-nav-column-heading">
+                Разработчики и ИТ
+            </div>
+            <ul class="footer-nav-column-list">
+                <li>
+                    <a href="#">Центр разработчиков</a>
+                </li>
+                <li>
+                    <a href="#">Документация</a>
+                </li>
+                <li>
+                    <a href="#">Darcrosoft Learn</a>
+                </li>
+                <li>
+                    <a href="#">Сообщество Darcrosoft Tech</a>
+                </li>
+                <li>
+                    <a href="#">Azure Marketplace</a>
+                </li>
+                <li>
+                    <a href="#">AppSource</a>
+                </li>
+                <li>
+                    <a href="#">Darcrosoft Power Platform</a>
+                </li>
+                <li>
+                    <a href="#">Visual Studio</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-nav-column-6">
+            <div class="footer-nav-column-heading">
+                Компания
+            </div>
+            <ul class="footer-nav-column-list">
+                <li>
+                    <a href="#">Вакансии</a>
+                </li>
+                <li>
+                    <a href="#">О корпорации Майкрософт</a>
+                </li>
+                <li>
+                    <a href="#">Инвесторы</a>
+                </li>
+                <li>
+                    <a href="#">Экологическая устойчивость</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="footer-base">
+        <ul class="footer-base-list">
+            <li>
+                <a href="#">Связаться с Darcrosoft</a>
+            </li>
+            <li>
+                <a href="#">Конфиденциальность</a>
+            </li>
+            <li>
+                <a href="#">Условия использования</a>
+            </li>
+            <li>
+                <a href="#">Товарные знаки</a>
+            </li>
+            <li>
+                <a href="#">Сведения о рекламе</a>
+            </li>
+            <li>
+                © Darcrosoft 2024
+            </li>
+        </ul>
+    </div>
+</footer>
+<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>

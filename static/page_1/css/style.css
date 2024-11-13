@@ -1,0 +1,313 @@
+body {
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  height: 100vh;
+}
+
+.mainpage1 {
+  font-weight: 500;
+}
+
+.carousel-1-text-black {
+  color: black;
+}
+
+.carousel-1-text-white {
+  color: white;
+}
+
+.button-style {
+  border-radius: 5%;
+  font-weight: 500;
+  position: absolute;
+  bottom: 5%;
+}
+
+.button-1-style {
+  border-radius: 5%;
+  font-weight: 500;
+}
+
+.button-2-style {
+  border-radius: 5%;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background-color: #0067b8;
+}
+
+.carousel-item img {
+  height: 600px; /* Выберите желаемую высоту */
+  object-fit: cover; /* Сохраняет пропорции, не сжимая изображение */
+  width: 100%; /* Сохраняет ширину на весь экран */
+}
+
+.container {
+  justify-content: center;
+  width: 100%;
+}
+
+#cont-card {
+  display: flex;
+  flex-direction:row; /* Располагаем карточки горизонтально */
+  justify-content: center; /* Центрируем карточки по горизонтали */
+  margin: 40px 0;
+  gap: 20px; /* Расстояние между карточками */
+  box-sizing: border-box; /* Включаем отступы и границы в ширину контейнера */
+  width: 100%;
+}
+
+.card {
+  height: 460px;
+  width: 40%;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  padding: 0px;
+  text-align: left;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 1px;
+}
+
+.card-2 {
+  height: 440px;
+  width: 40%;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  padding: 0px;
+  text-align: left;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 480px;
+}
+
+.card-img-top {
+  border-radius: 1px;
+}
+
+
+.card-body {
+  padding: 25px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-1-body {
+  background-color: #ffff;
+  position: relative;
+}
+
+.card-1 {
+  position: relative;
+  height: 490px;
+  width: 100%;
+  border: 1px solid #ccc;
+  text-align: center;
+  justify-content: center;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.text-overlay {
+  position: absolute; /* Абсолютное позиционирование текста */
+  top: 50%; /* Центрирование по вертикали */
+  left: 25%; /* Центрирование по горизонтали */
+  transform: translate(-50%, -50%); /* Смещение для точного центрирования */
+  color: black; /* Цвет текста */
+  text-align: left; /* Центрирование текста */
+  width: 50%; /* Занимает всю ширину изображения */
+  padding: 0 10%; /* Отступы слева и справа для улучшения читаемости */
+  box-sizing: border-box; /* Учитывает padding в ширине */
+}
+
+.card-text {
+  font-size: 16px; /* Размер шрифта текста */
+  margin: 15px 0 0; /* Отступ сверху для разделения заголовка и текста */
+}
+
+#card-1-button {
+  margin: 20px 0 0;
+}
+
+.cards-1 {
+  
+  
+}
+
+.cards-1-text {
+  margin: 50px 0 0;
+}
+
+.cards-1-cards {
+  display: flex;
+  flex-direction:row; /* Располагаем карточки горизонтально */
+  justify-content: center; /* Центрируем карточки по горизонтали */
+  margin: 30px 0;
+  gap: 20px; /* Расстояние между карточками */
+  box-sizing: border-box;
+}
+
+.btn-to-top:hover {
+  color: #000;
+  background-color: #fff;
+  border-color: #fff;
+  transition: background-color 0.1s ease, color 0.1s ease, transform 0.1s ease;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.btn-to-top {
+  width: 120%;
+}
+
+.btn-to-top a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.link-group {
+  margin-top: auto;
+}
+
+.back-to-top {
+  display: flex;
+  flex-direction:row;
+  justify-content:end;
+  height: 100px;
+  padding-right: 3%;
+}
+
+.btn-to-top {
+  position: relative;
+  top: 25%;
+  border-radius: 5%;
+  font-weight: 500;
+  background-color: #ccc;
+  color: black;
+  border-color:#ccc;
+}
+
+.footer {
+  background-color: #ebebeb;
+  padding: 20px; 
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center; /* Выравнивание колонок по центру */
+  flex-wrap: wrap; /* Перенос элементов на следующую строку при необходимости */
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.footer-nav-column-1 {
+  flex: 1;
+  min-width: 150px; /* Минимальная ширина колонки */
+  margin: 10px; /* Отступы между колонками */
+}
+
+.footer-nav-column-2 {
+  flex: 1;
+  min-width: 150px; /* Минимальная ширина колонки */
+  margin: 10px; /* Отступы между колонками */
+}
+
+.footer-nav-column-3 {
+  flex: 1;
+  min-width: 150px; /* Минимальная ширина колонки */
+  margin: 10px; /* Отступы между колонками */
+}
+
+.footer-nav-column-4 {
+  flex: 1;
+  min-width: 150px; /* Минимальная ширина колонки */
+  margin: 10px; /* Отступы между колонками */
+}
+
+.footer-nav-column-5 {
+  flex: 1;
+  min-width: 150px; /* Минимальная ширина колонки */
+  margin: 10px; /* Отступы между колонками */
+}
+
+.footer-nav-column-6 {
+  flex: 1;
+  min-width: 150px; /* Минимальная ширина колонки */
+  margin: 10px; /* Отступы между колонками */
+}
+
+.footer-nav-column-heading {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #666666;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.footer-nav-column-list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-nav-column-list li {
+  margin-bottom: 10px;
+}
+
+.footer-nav-column-list a {
+  color: #666666;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.footer-nav-column-list a:hover {
+  text-decoration: underline;
+}
+
+.footer-base {
+  text-align: center; /* Центрирование текста */
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.footer-base-list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-base {
+  display: flex;
+  justify-content: right;
+  padding-right: 5%;
+}
+
+.footer-base-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-base-list li {
+  margin: 0 15px;
+  color: #666666;
+  font-size: 12px;
+}
+
+.footer-base-list a, p {
+  color: #666666;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.footer-base-list a:hover {
+  text-decoration: underline;
+}

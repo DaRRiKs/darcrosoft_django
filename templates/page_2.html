@@ -1,0 +1,217 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Darcrosoft 365</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'page_2/css/style.css' %}">
+    <link rel="shortcut icon" href="{% static 'img/darcrosoft%20favicon.png' %}" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav
+        class="navbar navbar-expand-sm navbar-light bg-light"
+>
+    <div class="container">
+        <a class="navbar-brand" href="{% url 'page_1' %}"><img src="{% static 'img/Darcrosoft Logo Text.png' %}" alt=""></a>
+        <button
+                class="navbar-toggler d-lg-none"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId"
+                aria-controls="collapsibleNavId"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" href="{% url 'page_2' %}" aria-current="page"
+                    >Darcrosoft 365
+                        <span class="visually-hidden">(current)</span></a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Планы и цены</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            id="dropdownId"
+                            data-bs-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                    >Продукты</a
+                    >
+                    <div
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownId"
+                    >
+                        <a class="dropdown-item" href="#"
+                        >Action 1</a
+                        >
+                        <a class="dropdown-item" href="#"
+                        >Action 2</a
+                        >
+                    </div>
+                </li>
+            </ul>
+            <form class="d-flex my-2 my-lg-0">
+                <input
+                        class="form-control me-sm-2"
+                        type="text"
+                        placeholder="Поиск"
+                />
+                <button
+                        class="btn btn-outline-success my-2 my-sm-0"
+                        type="submit"
+                >
+                    Найти
+                </button>
+            </form>
+        </div>
+    </div>
+</nav>
+<div class="container-general">
+    <div class="container-general-selector">
+        <div class="selector-market">
+            <label class="label-selector-market" for="select-1-selector-market">Выбери свой регион</label>
+            <div class="custom-select-selector-market">
+                <select id="select-1-selector-market">
+                    <option value="ru"> Россия </option>
+                    <option value="by"> Беларусь </option>
+                    <option value="kz"> Казахстан </option>
+                    <option value="kg"> Киргизия </option>
+                    <option value="tj"> Таджикистан </option>
+                    <option value="tm"> Туркмения </option>
+                    <option value="uz"> Узбекистан </option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="container-general-media-box-1">
+        <div class="container-general-media-box-1-background">
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Hero-Backgroundimage-1600x680?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=1600&qlt=100&fit=constrain" alt="media">
+        </div>
+        <div class="container-general-media-box-1-foreground">
+            <div class="container-general-media-box-1-foreground-main">
+                <div class="container-general-media-box-1-foreground-main-layout">
+                    <div class="container-general-media-box-1-foreground-main-layout-block-heading">
+                        <div class="container-general-media-box-1-foreground-main-layout-block-heading-text-heading">
+                            MICROSOFT 365 ДЛЯ ДОМА
+                        </div>
+                        <div class="container-general-media-box-1-foreground-main-layout-block-heading-text-heading-title">
+                            <h1>Добейтесь нового уровня продуктивности с ИИ</h1>
+                        </div>
+                        <div class="container-general-media-box-1-foreground-main-layout-block-heading-text-paragraph">
+                            Получите приложения для продуктивной работы, систему безопасности и хранилище в Microsoft 365. Затем добавьте возможности ИИ с помощью Copilot Pro.
+                        </div>
+                        <div class="container-general-media-box-1-foreground-main-layout-block-heading-button-group">
+                            <div class="container-general-media-box-1-foreground-main-layout-block-heading-button-group-section">
+                                <button type="button" class="btn btn-primary btn-black">
+                                    Планы и цены
+                                </button>
+                                <button type="button" class="btn btn-primary btn-white">
+                                    Попробовать бесплатно
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-general-media-box-1-foreground-link-bar">
+                <div class="container-general-media-box-1-foreground-link-bar-tabs">
+                    <ul class="container-general-media-box-1-foreground-link-bar-tab-group">
+                        <li class="tab">
+                            <a href="#">
+                                <div class="tab-item">
+                                    <div class="tab-item-text">
+                                        Для дома
+                                    </div>
+                                    <span class="indicator"></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="tab">
+                            <a href="#">
+                                <div class="tab-item">
+                                    <div class="tab-item-text">
+                                        Для бизнеса
+                                    </div>
+                                    <span class="indicator"></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="tab">
+                            <a href="#">
+                                <div class="tab-item">
+                                    <div class="tab-item-text">
+                                        Для крупных предприятий
+                                    </div>
+                                    <span class="indicator"></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="tab">
+                            <a href="#">
+                                <div class="tab-item">
+                                    <div class="tab-item-text">
+                                        Для образования
+                                    </div>
+                                    <span class="indicator"></span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="secondary-sticky-nav">
+        <div class="sticky-direction-top">
+            <div class="secondary-nav">
+                <div class="sticky-nav">
+                    <div class="dropdown">
+                        <div class="dropdown-menu-1">
+                            <ul class="slider-scrollbar">
+                                <li class="menu-list-item">
+                                    <a href="#">Как это работает</a>
+                                </li>
+                                <li class="menu-list-item">
+                                    <a href="#">Подборка новостей</a>
+                                </li>
+                                <li class="menu-list-item">
+                                    <a href="#">Состав решения</a>
+                                </li>
+                                <li class="menu-list-item">
+                                    <a href="#">Планы</a>
+                                </li>
+                                <li class="menu-list-item">
+                                    <a href="#">Истории клиентов</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="action-group">
+                        <button type="button" class="btn btn-primary btn-black">
+                            Планы и цены
+                        </button>
+                        <button type="button" class="btn btn-primary btn-white">
+                            Попробовать бесплатно
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>
